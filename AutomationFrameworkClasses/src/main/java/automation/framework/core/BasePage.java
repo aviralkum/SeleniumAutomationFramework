@@ -30,9 +30,11 @@ public class BasePage {
 
     protected void waitForElementToDisappear(By locator) {
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+        System.out.println(locator.toString());
     }
 
-    protected void waitForTextToDisappear(By locator,String text){
+    private void waitForTextToDisappear(By locator,String text){
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
     }
+
 }
