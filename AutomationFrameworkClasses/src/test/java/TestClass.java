@@ -10,5 +10,7 @@ public class TestClass {
     public void simpleTest(){
 
        Assert.assertEquals(2,2);
+       //comment
+        
     }
 }
